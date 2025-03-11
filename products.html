@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>GREENDEN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+</head>
+
+<body>
+    <nav class="bg-green-200 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-2xl font-bold">GREENDEN</h1>
+
+        <svg id="menuIcon" class="h-8 w-8 text-black items-center inline cursor-pointer md:hidden" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+        <ul class="flex gap-5 text-gray-600 hidden md:flex">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="products.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!--side Navbar-->
+    <section id="sideNav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000"
+        style="width:50%;height:100vh;right:-50%">
+        <div class="text-right p-5">
+            <p id="closeNav" class="inline cursor-pointer"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64">
+                <path d="M18,21H6c-1.657,0-3-1.343-3-3V6c0-1.657,1.343-3,3-3h12c1.657,0,3,1.343,3,3v12	C21,19.657,19.657,21,18,21z" opacity=".35"></path><path d="M14.812,16.215L7.785,9.188c-0.384-0.384-0.384-1.008,0-1.392l0.011-0.011c0.384-0.384,1.008-0.384,1.392,0l7.027,7.027	c0.384,0.384,0.384,1.008,0,1.392l-0.011,0.011C15.82,16.599,15.196,16.599,14.812,16.215z"></path><path d="M7.785,14.812l7.027-7.027c0.384-0.384,1.008-0.384,1.392,0l0.011,0.011c0.384,0.384,0.384,1.008,0,1.392l-7.027,7.027	c-0.384,0.384-1.008,0.384-1.392,0l-0.011-0.011C7.401,15.82,7.401,15.196,7.785,14.812z"></path>
+                </svg></p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600 ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="products.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="p-4 text-center">
+        <h1 class="font-bold mt-5 text-4xl text-center">Our products</h1>
+        <input id="search" type="text" placeholder="search for a Products..." class="border border-black p-2 m-3"
+            style="width: 60%;"><br>
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+            <div class="text-center">
+                <img src="./images/bt-3.1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="#">
+                <h1>Rose plant</h1>
+                <p>$30</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/bt-3.2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="#">
+                <h1>Rose plant</h1>
+                <p>$35</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/bt-1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 " alt="#">
+                <h1>Rose plant</h1>
+                <p>$38</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/bt-2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="#">
+                <h1>money plant</h1>
+                <p>$40</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/pot -1.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="#">
+                <h1>creeping plant</h1>
+                <p>$30</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/tk-2.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="#">
+                <h1>shamrok plant</h1>
+                <p>$35</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/tk-3.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2 " alt="#">
+                <h1>chrysanthemum plant</h1>
+                <p>$38</p>
+            </div>
+            <div class="text-center">
+                <img src="./images/tk-4.jpg" class="inline hover:shadow-xl transform hover:-translate-y-2" alt="#">
+                <h1>monstera deliciosa</h1>
+                <p>$40</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="bg-green-200 p-10 flex flex-col gap-5">
+        <h1 class="text-4xl font-bold"> Greenden</h1>
+        <p>the standard chunk of lorem ipsum used since the 1550s is reporodused below for those interest</p>
+        <p>@ 2021 Greenden.com</p>
+    </section>
+    <script src="products.js"></script>
+</body>
+
+</html>
